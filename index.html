@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Password Checker</h1>
+        <p>Enter your password to check if it's strong</p>
+        <ul>
+            <li>Password must be at least 8 characters long</li>
+            <li>Password must contain at least one number</li>
+            <li>Password must contain at least one uppercase letter</li>
+            <li>Password must contain at least one lowercase letter</li>
+            <li>Password must contain at least one special character</li>
+        </ul>
+        <form>
+            <input placeholder="Enter your password" type="password" id="password">
+            <span id="view">View</span>
+        </form>
+        <button onclick="checkPassword()">Check</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
